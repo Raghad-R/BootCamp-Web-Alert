@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :root {
+                --green-border:#48c78E;
+                --green-color:#257953;
+                --green-background:#effaf5;
+                --blue-border:#3e8ed0;
+                --blue-color:#296fa8;
+                --blue-background:#eff5fb;
+                --red-border:#f14668;
+                --red-color:#cc0f35;
+                --red-background:#feecf0;
+                --yellow-border:#ffd257;
+                --yellow-color:#946c00;
+                --yellow-background:#fffaeb;
+                --dark-border:#4A4A4A;
+                --dark-color:#4A4A4A;
+                --dark-background:#f5f5f5;
+                --light-background:#e9ecef;
+                --light-color:#495057;
+            }
+            .alert{
+                width: inherit;
+                padding: 20px;
+                border-radius: 5px;
+            }
+            .alert-rtl{
+                width: inherit;
+                padding: 20px;
+                border-radius: 5px;
+                text-align: right;
+            }
+            .danger{
+                background-color: var(--red-background);
+                color: var(--red-color);
+            }
+            .primary{
+                background-color: var(--blue-background);
+                color: var(--blue-color);
+            }
+            .success{
+                background-color: var(--green-background);
+                color: var(--green-color);
+            }
+            .warning{
+                background-color: var(--yellow-background);
+                color: var(--yellow-color);
+            }
+            .dark{
+                background-color: var(--dark-background);
+                color: var(--dark-color);
+            }
+            .light{
+                background-color: var(--light-background);
+                color: var(--light-color);
+            }
+            .border-l{
+                border-left:4px solid;
+                border-radius: 0;
+            }
+            .border-r{
+                border-right:4px solid;
+            }
+            .TB-border{
+                border-top:2px solid;
+                border-bottom:2px solid;
+                border-radius: 0;
+            }
+            .border{
+                border:1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="alert danger">A simple danger alert—check it out!</div><br>
+        <div class="alert border primary">A simple primary alert—check it out!</div><br>
+        <div class="alert TB-border success">A simple success alert—check it out!</div><br>
+        <div class="alert .border-l warning">A simple warning alert—check it out!</div><br>
+        <div class="alert dark">A simple dark alert—check it out!</div><br>
+        <div class="alert light">A simple light alert—check it out!</div><br>
+
+        <div class="alert-rtl danger">مشكلة</div><br>
+        <div class="alert-rtl border primary">معلومة</div><br>
+        <div class="alert-rtl TB-border success">نجاح</div><br>
+        <div class="alert-rtl .border-r warning">تنبيه</div><br>
+        <div class="alert-rtl dark">دارك</div><br>
+        <div class="alert-rtl light">لايت</div>
+
+        <p class="alert danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quae accusantium harum id obcaecati dolore beatae illo dolores. Pariatur quibusdam reiciendis, vitae fuga autem ipsa unde quidem quo tempore perferendis.</p>
+
+    </body>
+</html>
