@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :root {
+                --green-border:#48c78E;
+                --green-color:#257953;
+                --green-background:#effaf5;
+                --blue-border:#3e8ed0;
+                --blue-color:#296fa8;
+                --blue-background:#eff5fb;
+                --red-border:#f14668;
+                --red-color:#cc0f35;
+                --red-background:#feecf0;
+                --yellow-border:#ffd257;
+                --yellow-color:#946c00;
+                --yellow-background:#fffaeb;
+                --dark-border:#4A4A4A;
+                --dark-color:#4A4A4A;
+                --dark-background:#f5f5f5;
+            }
+
+            
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 20%;
+                font-family: sans-serif;
+                width: 700px;
+                
+            }
+            .alert{
+                padding: 10px;
+                border-radius: 4px;
+                width: inherit;
+                margin: 10px;                
+            }
+            ul.alert{
+                padding:0 25px;
+            }
+            .success{
+                background-color: var(--green-background);
+                color: var(--green-color);
+            }
+            .warning{
+                background-color: var(--yellow-background);
+                color: var(--yellow-color);
+
+            }
+            .info{
+                background-color: var(--blue-background);
+                color: var(--blue-color);
+
+            }
+            .error{
+                background-color: var(--red-background);
+                color: var(--red-color);
+            }
+         /*   .title{
+                height: 30px;
+                width: inherit;
+                background-color: var(--blue-border);
+                color:white;
+                font-weight: bold;
+            }   */    
+        </style>
+    </head>
+    <body>
+        <div class="alert success" style="font-size: xx-large;">
+            <i class='bx bxs-check-circle'></i>
+            This is a success alert.
+        </div>
+        <div class="alert warning">
+            <i class='bx bxs-error'></i>
+            This is a warning alert.
+        </div>
+        <div class="alert info wid-5">
+            <i class='bx bxs-info-circle'></i> 
+            This is a info alert.
+        </div>
+        <div class="alert  error">
+            <i class='bx bxs-error'></i>
+            This is a error alert.
+        </div>
+       <!-- <div class="alert info wid-5">
+            <p class="title"> Warning</p>
+            This is a info alert.
+        </div>--> 
+        <ul class="alert error">
+            <li>hoshi</li>
+            <li>boshi</li>
+            <li>moshi</li>
+        </ul>
+    </body>
+</html>
