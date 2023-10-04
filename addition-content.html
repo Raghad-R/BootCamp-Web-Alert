@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <style>
+  
+  .uk-alert-primary {
+    position: relative;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+
+  .uk-alert-primary:target {
+    display: none;
+  }
+
+  .uk-alert-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="uk-alert-primary" id="alert" uk-alert>
+  <a class="uk-alert-close" href="#alert" uk-close>x</a>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+
+</div> -->
+<style>
+  :root {
+                --green-border:#48c78E;
+                --green-color:#257953;
+                --green-background:#effaf5;
+                --blue-border:#3e8ed0;
+                --blue-color:#296fa8;
+                --blue-background:#eff5fb;
+                --red-border:#f14668;
+                --red-color:#cc0f35;
+                --red-background:#feecf0;
+                --yellow-border:#ffd257;
+                --yellow-color:#946c00;
+                --yellow-background:#fffaeb;
+                --dark-border:#4A4A4A;
+                --dark-color:#4A4A4A;
+                --dark-background:#f5f5f5;
+            }
+
+            .success{
+                background-color: var(--green-background);
+                color: var(--green-color);
+                border-top:20px solid var(--green-border);
+                
+            }
+            .warning{
+                background-color: var(--yellow-background);
+                color: var(--yellow-color);
+
+            }
+
+.alert{
+                position: relative;
+                padding: 23px;
+                border-radius: 4px;
+                width: fit-content;
+                margin: 10px;                
+            }
+
+
+/***/
+.alert-Add-content {
+
+ border: 2px solid;
+ 
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.alert .alert-heading {
+
+  font-size: 30px;
+  margin-block:0 ;
+}
+
+.alert p {
+  margin-bottom: 10px;
+
+}
+
+.alert hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 0;
+  border-top: 1px solid;
+}
+.info{
+                background-color: var(--blue-background);
+                color: var(--blue-color);
+                border-top: 30px solid var(--blue-border);
+
+            }
+            .error{
+                background-color: var(--red-background);
+                color: var(--red-color);
+            }
+/* .alert .sm {
+ 
+  
+} */
+</style>
+
+<body>
+<div class="alert alert-Add-content warning" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <hr>
+  <p class="sm">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+
+
+</body>
+</html>
