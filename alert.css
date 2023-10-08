@@ -72,11 +72,6 @@ ul.alert{
     color: var(--red-color);
     border-color: var(--red-border);
 }
-.dark{
-    background-color: var(--dark-background);
-    color: var(--dark-color);
-    border-color: var(--dark-border);
-}
 .border-l{
     border-left:4px solid;
     border-radius: 0;
@@ -97,10 +92,8 @@ ul.alert{
     margin-block:0 ;
 }
 .alert p {
-    margin-bottom: 10px;
-  
+    margin-bottom: 10px; 
 }
-  
 .alert hr {
     margin-top: 15px;
     margin-bottom: 15px;
