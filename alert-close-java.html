@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+:root {
+    --green-border: #48c78E;
+    --green-color: #257953;
+    --green-background: #effaf5;
+    --blue-border: #3e8ed0;
+    --blue-color: #296fa8;
+    --blue-background: #eff5fb;
+    --red-color: #cc0f35;
+    --red-background: #feecf0;
+    --yellow-color: #946c00;
+    --yellow-background: #fffaeb;
+    --dark-color: #4A4A4A;
+    --dark-background: #f5f5f5;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+    font-family: sans-serif;
+  }
+  
+  .alert {
+    position: relative;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .alert h3 {
+    float: left;
+    width: 30%;
+  }
+  
+
+  .alert p {
+    margin: 0;
+    padding-top: 20px;
+  }
+  
+  .alert.warning {
+    background-color: var(--yellow-background);
+    color: var(--yellow-color);
+  }
+  
+  .alert.success {
+    background-color: var(--green-background);
+    color: var(--green-color);
+  }
+  
+  .alert.info {
+    background-color: var(--blue-background);
+    color: var(--blue-color);
+  }
+  
+  .alert.error {
+    background-color: var(--red-background);
+    color: var(--red-color);
+  }
+  .alert .close-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  </style>
+<body>
+     
+    <div class="alert warning">
+        <h3>
+            Notice
+            <span class="close-icon" onclick="closeAlert(this)">&#10006;</span>
+        </h3>
+        <p>This is an alert message.</p>
+    </div>
+
+    <div class="alert error">
+        <h3>
+            Notice
+            <span class="close-icon" onclick="closeAlert(this)">&#10006;</span>
+        </h3>
+        <p>This is an alert message.</p>
+    </div>
+
+    <script>
+        function closeAlert(element) {
+            var alertElement = element.closest('.alert');
+            alertElement.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
