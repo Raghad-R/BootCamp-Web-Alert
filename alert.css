@@ -1,0 +1,102 @@
+:root {
+    --green-border:#48c78E;
+    --green-color:#257953;
+    --green-background:#effaf5;
+    --blue-border:#3e8ed0;
+    --blue-color:#296fa8;
+    --blue-background:#eff5fb;
+    --red-border:#f14668;
+    --red-color:#cc0f35;
+    --red-background:#feecf0;
+    --yellow-border:#ffd257;
+    --yellow-color:#946c00;
+    --yellow-background:#fffaeb;
+    --default-border:#dbdbdb;
+    --default-color:#4a4a4a;
+    --default-background:#f5f5f5;
+
+
+}
+.border-l{
+    border-left:4px solid;
+    border-radius: 0;
+}
+.border-r{
+    border-right:4px solid;
+}
+.TB-border{
+    border-top:2px solid;
+    border-bottom:2px solid;
+    border-radius: 0;
+}
+.border{
+    border:1px solid;
+}
+.alert{
+    /* display: flex;
+    column-gap: 6px; */
+    padding: 10px;
+    border-radius: 4px;
+    width: inherit;
+    margin: 10px;  
+    background-color: var(--default-background);
+    border-color: var(--default-border);      
+    color: var(--default-color);  
+ 
+}
+ul.alert{
+    padding:0 25px;
+    display: block;
+}
+.success{
+    background-color: var(--green-background);
+    color: var(--green-color);
+    border-color: var(--green-border);      
+
+}
+.warning{
+    background-color: var(--yellow-background);
+    color: var(--yellow-color);
+    border-color: var(--yellow-border);      
+
+
+}
+.info{
+    background-color: var(--blue-background);
+    color: var(--blue-color);
+    border-color: var(--blue-border);
+
+}
+.error{
+    background-color: var(--red-background);
+    color: var(--red-color);
+    border-color: var(--red-border);
+}
+.border-l{
+    border-left:4px solid;
+    border-radius: 0;
+}
+.border-r{
+    border-right:4px solid;
+}
+.TB-border{
+    border-top:2px solid;
+    border-bottom:2px solid;
+    border-radius: 0;
+}
+.border{
+    border:1px solid;
+}
+.alert .alert-heading {
+    font-size: 30px;
+    margin-block:0 ;
+}
+.alert p {
+    margin-bottom: 10px; 
+}
+.alert hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid;
+}
